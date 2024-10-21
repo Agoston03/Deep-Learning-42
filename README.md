@@ -1,4 +1,4 @@
-# Deep Learning Project
+# Deep-Learning-Project
 
 ### **Team Name:** 42
 
