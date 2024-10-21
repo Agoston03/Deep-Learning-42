@@ -9,4 +9,3 @@
 
 TO-DOs: 
 - [ ] Balance the dataset professionaly (augmentation: ImageDataGenerator and flow_from_directory)
-- [ ] 
