@@ -7,4 +7,6 @@
 - **Gergő László Gyulai** (JJY2VO)
 - **Ágoston Horváth** (PGBDTC)
 
-Name of the executable codebase: deep-learning.ipyn
+TO-DOs: 
+- [ ] Balance the dataset professionaly (augmentation: ImageDataGenerator and flow_from_directory)
+- [ ] 
