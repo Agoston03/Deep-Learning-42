@@ -19,3 +19,6 @@ Our team will develop AI algorithms that differentiate histologically-confirmed 
 - Designation of data source and downloading scripts
 - Data exploration and visualization
 - Data preparation for training, final result: training, validation and test inputs and outputs.
+
+### Execution method:
+#### deep-learning-42.ipynb
