@@ -15,7 +15,7 @@ Dermatoscope images reveal morphologic features not visible to the naked eye, bu
 Our team will develop AI algorithms that differentiate histologically-confirmed malignant skin lesions from benign lesions on a patient. Our work will help to improve early diagnosis and disease prognosis by extending the benefits of automated skin cancer detection to a broader population and settings.
 
 ### Files:
-## deep-learning-42.ipynb:
+#### deep-learning-42.ipynb:
 - Designation of data source and downloading
 - Data exploration, visualization
 - Data preparation for training, final result: train, validation and test inputs and outputs.
