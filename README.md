@@ -15,10 +15,19 @@ Dermatoscope images reveal morphologic features not visible to the naked eye, bu
 Our team will develop AI algorithms that differentiate histologically-confirmed malignant skin lesions from benign lesions on a patient. Our work will help to improve early diagnosis and disease prognosis by extending the benefits of automated skin cancer detection to a broader population and settings.
 
 ### Files:
-#### deep-learning-42.ipynb:
+#### deep-learning-42_milestone1.ipynb:
 - Designation of data source and downloading scripts
 - Data exploration and visualization
-- Data preparation for training, final result: training, validation and test inputs and outputs.
+- Data preparation for training, final result: training, validation and test inputs and outputs
 
-### Execution method:
-#### deep-learning-42.ipynb
+#### deep-learning-42_milestone2.ipynb:
+- Designation of data source and downloading scripts
+- Data exploration and visualization
+- Data preparation for training, final result: training, validation and test inputs and outputs
+- Efficient loading of data with a generator
+- Defining the model for training
+- Training the model
+- Evaluation of the prediction
+
+### Execution method for training and evaluation:
+#### deep-learning-42_milestone2.ipynb (You need to copy your own kaggle.json file into Colab in order to valide yourself)
