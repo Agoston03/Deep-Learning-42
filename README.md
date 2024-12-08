@@ -31,5 +31,14 @@ Our team will develop AI algorithms that differentiate histologically-confirmed 
 - Training the model
 - Evaluation of the prediction
 
+#### Copy_of_deep_learning_42_milestone2.ipynb:
+- Same as the deep-learning-42_milestone2.ipynb plus the creation of the tflite model
+
+#### Metadata.ipynb:
+- Creates the metadata for an image classifier tflite model
+
+#### SkinCancerIdentifier:
+- Android application for the image classifier
+
 ### Execution method for training and evaluation:
 #### deep-learning-42_milestone2.ipynb (You need to copy your own kaggle.json file into Colab in order to validate yourself)
