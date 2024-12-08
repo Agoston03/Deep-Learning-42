@@ -1,5 +1,5 @@
 ### *This is a Draft version*
-### Our goal is to achieve the recommended grade. The current solution is still under development.
+### Our goal is to achieve the offered grade. The current solution is still under development.
 # Deep-Learning-Project
 
 ### **Team Name:** 42
