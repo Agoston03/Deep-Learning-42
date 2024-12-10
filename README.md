@@ -40,5 +40,8 @@ Our team will develop AI algorithms that differentiate histologically-confirmed 
 #### SkinCancerIdentifier:
 - Android application for the image classifier
 
+#### team42.pptx:
+- Report presentation for the project
+
 ### Execution method for training and evaluation:
 #### deep-learning-42_milestone2.ipynb (You need to copy your own kaggle.json file into Colab in order to validate yourself)
