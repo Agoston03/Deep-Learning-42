@@ -45,3 +45,9 @@ Our team will develop AI algorithms that differentiate histologically-confirmed 
 
 ### Execution method for training and evaluation:
 #### deep-learning-42_milestone2.ipynb (You need to copy your own kaggle.json file into Colab in order to validate yourself)
+
+### If you wish to try the Android application:
+1. After running deep-learning-42_milestone2.ipynb, download the model.tflite file.
+2. Run the Metadata.ipynb with the model.tflite. This adds metadata to your model.
+3. After downloading this final model.tflite, replace the one in the SkinCancerIdentifier application with it.
+4. Open the SkinCancerIdentifier application using Android Studio and try it using an emulator or a physical device.
