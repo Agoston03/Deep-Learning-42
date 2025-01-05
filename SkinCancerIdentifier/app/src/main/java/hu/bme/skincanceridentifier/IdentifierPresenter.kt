@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class IdentifierPresenter @Inject constructor(private val identifierInteractor: IdentifierInteractor) {
 
-    suspend fun identify(image: Bitmap, context: Context): String = withIOContext {
+    suspend fun identify(image: Bitmap, context: Context): Float = withIOContext {
         return@withIOContext identifierInteractor.identify(image, context)
     }
 }

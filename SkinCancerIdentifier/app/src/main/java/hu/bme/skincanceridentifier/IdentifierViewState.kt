@@ -7,7 +7,7 @@ sealed class IdentifierViewState
 object Loading : IdentifierViewState()
 
 data class IdentifierContent(
-    var prediction: String = "",
+    var prediction: Float = 0.0F,
     var image: Bitmap? = null,
     val loading: Boolean = false
 ) : IdentifierViewState()

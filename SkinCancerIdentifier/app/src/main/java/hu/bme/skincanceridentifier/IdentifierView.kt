@@ -37,7 +37,7 @@ import com.skydoves.landscapist.glide.GlideImage
 
 @Composable
 fun Identifier(
-    prediction: String,
+    prediction: Float,
     image: Bitmap?,
     onImageChosen: (Bitmap, Context) -> Unit
 ) {
@@ -83,7 +83,7 @@ fun Identifier(
             }
         }
 
-        if(prediction != "")
+        if(prediction != 0.0F)
             Row(
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 modifier = Modifier
@@ -96,7 +96,10 @@ fun Identifier(
                     modifier = Modifier.weight(1f),
                 ) {
                     Text(
-                        prediction,
+                        when {
+                            prediction < 0.5 -> "Prediction: Benign"
+                            else -> "Prediction: Malignant"
+                        },
                         maxLines = 1,
                         softWrap = true,
                         color = Color.Black

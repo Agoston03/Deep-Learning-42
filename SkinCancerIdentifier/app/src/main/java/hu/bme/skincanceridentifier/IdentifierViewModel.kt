@@ -13,7 +13,7 @@ class IdentifierViewModel @Inject constructor(private val identifierPresenter: I
 
     fun load() = execute {
         viewState = IdentifierContent(loading = true)
-        viewState = IdentifierContent(prediction = "", loading = false)
+        viewState = IdentifierContent(prediction = 0.0F, loading = false)
     }
 
     fun identify(image: Bitmap, context: Context) = execute {

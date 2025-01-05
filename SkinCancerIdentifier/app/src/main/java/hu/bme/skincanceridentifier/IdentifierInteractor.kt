@@ -8,19 +8,13 @@ import org.tensorflow.lite.support.image.TensorImage
 import javax.inject.Inject
 
 class IdentifierInteractor @Inject constructor() {
-    fun identify(image: Bitmap, context: Context): String {
+    fun identify(image: Bitmap, context: Context): Float {
         val model = Model.newInstance(context)
 
         val tensorImage = TensorImage.fromBitmap(image)
 
         val outputs = model.process(tensorImage)
         val probability = outputs.probabilityAsTensorBuffer
-
-        try {
-            val probability2 = outputs.probabilityAsCategoryList
-        } catch (e: Exception) {
-            Log.i("probability_exception", e.toString())
-        }
 
         val result: Float =  probability.floatArray[0]
         var predStr = ""
@@ -33,9 +27,7 @@ class IdentifierInteractor @Inject constructor() {
         }
 
         model.close()
-        //val maxScore = probability.maxByOrNull { p -> p.score }!!
 
-        //return "Prediction:" + "\n" + maxScore.label + "\n" + "Probability: " + (maxScore.score * 10).toInt() + "%"
-        return predStr
+        return probability.floatArray[0]
     }
 }
