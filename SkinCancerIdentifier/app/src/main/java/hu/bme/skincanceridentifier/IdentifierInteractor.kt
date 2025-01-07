@@ -16,18 +16,9 @@ class IdentifierInteractor @Inject constructor() {
         val outputs = model.process(tensorImage)
         val probability = outputs.probabilityAsTensorBuffer
 
-        val result: Float =  probability.floatArray[0]
-        var predStr = ""
-        if (result < 0.5) {
-            // means prediction was for category corresponding to 0
-            predStr = "Prediction: Benign"
-        } else {
-            // means prediction was for category corresponding to 1
-            predStr = "Prediction: Malignant"
-        }
-
         model.close()
 
+        Log.i("probability", probability.floatArray[0].toString())
         return probability.floatArray[0]
     }
 }

@@ -97,8 +97,8 @@ fun Identifier(
                 ) {
                     Text(
                         when {
-                            prediction < 0.5 -> "Prediction: Benign"
-                            else -> "Prediction: Malignant"
+                            prediction < 0.5 -> "Prediction: Malignant"
+                            else -> "Prediction: Benign"
                         },
                         maxLines = 1,
                         softWrap = true,
